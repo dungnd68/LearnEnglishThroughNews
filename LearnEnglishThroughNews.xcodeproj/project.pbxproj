@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6006DD112D85131F00070F2B /* SavedWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6006DD102D85131F00070F2B /* SavedWord.swift */; };
+		602A44952D8912D0003CA53B /* TextContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A44932D8912D0003CA53B /* TextContentView.swift */; };
+		602A44962D8912D0003CA53B /* WordTranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A44942D8912D0003CA53B /* WordTranslateView.swift */; };
+		602A44A32D89168C003CA53B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A44A02D89168C003CA53B /* NetworkManager.swift */; };
+		602A44A42D89168C003CA53B /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A44A12D89168C003CA53B /* NetworkUtil.swift */; };
+		602A44A52D89168C003CA53B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A449F2D89168C003CA53B /* NetworkError.swift */; };
+		602A44AA2D892368003CA53B /* CustomWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A44A92D892368003CA53B /* CustomWordView.swift */; };
+		6032A2F22D831E7700480217 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6032A2F12D831E7700480217 /* FirebaseFirestore */; };
+		60838B0D2D8BB27B00B25CCF /* VocabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60838B0C2D8BB27B00B25CCF /* VocabViewModel.swift */; };
+		60A94F3C2D69CC280084CA53 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 60A94F3B2D69CC280084CA53 /* FirebaseAuth */; };
+		60A94F3F2D69CC530084CA53 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 60A94F3E2D69CC530084CA53 /* GoogleSignIn */; };
+		60A94F412D69CC530084CA53 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 60A94F402D69CC530084CA53 /* GoogleSignInSwift */; };
+		60A94F432D69CC690084CA53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60A94F422D69CC690084CA53 /* GoogleService-Info.plist */; };
+		60A94F462D69CD2B0084CA53 /* UIApplication+RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A94F452D69CD2B0084CA53 /* UIApplication+RootViewController.swift */; };
+		60A94F492D69CD550084CA53 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A94F482D69CD550084CA53 /* AuthenticationViewModel.swift */; };
+		60A94F4B2D69CD5A0084CA53 /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A94F4A2D69CD5A0084CA53 /* AuthenticatedView.swift */; };
+		60A94F4D2D69CD5F0084CA53 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A94F4C2D69CD5F0084CA53 /* AuthenticationView.swift */; };
+		60A94F4F2D69CD6C0084CA53 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A94F4E2D69CD6C0084CA53 /* LoginView.swift */; };
+		60A94F512D69CD740084CA53 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A94F502D69CD740084CA53 /* SignupView.swift */; };
+		60BB97CA2D9003B4001CE590 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB97C92D9003B4001CE590 /* FlashcardView.swift */; };
+		60BB97CC2D900490001CE590 /* MultipleChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB97CB2D900490001CE590 /* MultipleChoiceView.swift */; };
+		60BB97D02D91A0E1001CE590 /* NewsContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BB97CF2D91A0E1001CE590 /* NewsContentViewModel.swift */; };
+		60BB97D42D93B562001CE590 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60BB97D22D93B562001CE590 /* correct.mp3 */; };
+		60BB97D52D93B562001CE590 /* incorrect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60BB97D32D93B562001CE590 /* incorrect.mp3 */; };
+		60DD87E22D78480600DB31D7 /* LearnEnglishThroughNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD87E12D78480600DB31D7 /* LearnEnglishThroughNewsApp.swift */; };
+		60F2E92D2D97B24200383BFC /* StatisticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F2E92C2D97B24200383BFC /* StatisticalView.swift */; };
+		60FBF7AD2D5DC9E800B1ABB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60FBF7AC2D5DC9E800B1ABB6 /* Assets.xcassets */; };
+		60FBF7B02D5DC9E800B1ABB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60FBF7AF2D5DC9E800B1ABB6 /* Preview Assets.xcassets */; };
+		60FBF7C22D5DCABF00B1ABB6 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FBF7C02D5DCABF00B1ABB6 /* News.swift */; };
+		60FBF7C32D5DCABF00B1ABB6 /* WorldNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FBF7C12D5DCABF00B1ABB6 /* WorldNews.swift */; };
+		60FBF7C92D5DCADA00B1ABB6 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FBF7C62D5DCADA00B1ABB6 /* NewsViewModel.swift */; };
+		60FBF7CE2D5DCB0600B1ABB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FBF7CC2D5DCB0600B1ABB6 /* ContentView.swift */; };
+		60FBF7D42D5DCB3100B1ABB6 /* NewsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FBF7D12D5DCB3100B1ABB6 /* NewsContentView.swift */; };
+		60FBF7D52D5DCB3100B1ABB6 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FBF7D22D5DCB3100B1ABB6 /* NewsView.swift */; };
+		60FBF7DA2D5DCB3D00B1ABB6 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FBF7D72D5DCB3D00B1ABB6 /* QuizView.swift */; };
+		60FBF7DB2D5DCB3D00B1ABB6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FBF7D82D5DCB3D00B1ABB6 /* ProfileView.swift */; };
+		60FBF7DC2D5DCB3D00B1ABB6 /* VocabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FBF7D92D5DCB3D00B1ABB6 /* VocabView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6006DD102D85131F00070F2B /* SavedWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedWord.swift; sourceTree = "<group>"; };
+		602A44932D8912D0003CA53B /* TextContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextContentView.swift; sourceTree = "<group>"; };
+		602A44942D8912D0003CA53B /* WordTranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTranslateView.swift; sourceTree = "<group>"; };
+		602A449F2D89168C003CA53B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		602A44A02D89168C003CA53B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		602A44A12D89168C003CA53B /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
+		602A44A92D892368003CA53B /* CustomWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWordView.swift; sourceTree = "<group>"; };
+		60838B0C2D8BB27B00B25CCF /* VocabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabViewModel.swift; sourceTree = "<group>"; };
+		60A94F422D69CC690084CA53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60A94F452D69CD2B0084CA53 /* UIApplication+RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+RootViewController.swift"; sourceTree = "<group>"; };
+		60A94F482D69CD550084CA53 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		60A94F4A2D69CD5A0084CA53 /* AuthenticatedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
+		60A94F4C2D69CD5F0084CA53 /* AuthenticationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		60A94F4E2D69CD6C0084CA53 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		60A94F502D69CD740084CA53 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		60A94F522D69CE950084CA53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60BB97C92D9003B4001CE590 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
+		60BB97CB2D900490001CE590 /* MultipleChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceView.swift; sourceTree = "<group>"; };
+		60BB97CF2D91A0E1001CE590 /* NewsContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContentViewModel.swift; sourceTree = "<group>"; };
+		60BB97D22D93B562001CE590 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		60BB97D32D93B562001CE590 /* incorrect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incorrect.mp3; sourceTree = "<group>"; };
+		60DD87E12D78480600DB31D7 /* LearnEnglishThroughNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnEnglishThroughNewsApp.swift; sourceTree = "<group>"; };
+		60F2E92C2D97B24200383BFC /* StatisticalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticalView.swift; sourceTree = "<group>"; };
+		60FBF7A52D5DC9E600B1ABB6 /* LearnEnglishThroughNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnEnglishThroughNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60FBF7AC2D5DC9E800B1ABB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60FBF7AF2D5DC9E800B1ABB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60FBF7C02D5DCABF00B1ABB6 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		60FBF7C12D5DCABF00B1ABB6 /* WorldNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldNews.swift; sourceTree = "<group>"; };
+		60FBF7C62D5DCADA00B1ABB6 /* NewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		60FBF7CC2D5DCB0600B1ABB6 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		60FBF7D12D5DCB3100B1ABB6 /* NewsContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsContentView.swift; sourceTree = "<group>"; };
+		60FBF7D22D5DCB3100B1ABB6 /* NewsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		60FBF7D72D5DCB3D00B1ABB6 /* QuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		60FBF7D82D5DCB3D00B1ABB6 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		60FBF7D92D5DCB3D00B1ABB6 /* VocabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60FBF7A22D5DC9E600B1ABB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A94F412D69CC530084CA53 /* GoogleSignInSwift in Frameworks */,
+				60A94F3C2D69CC280084CA53 /* FirebaseAuth in Frameworks */,
+				6032A2F22D831E7700480217 /* FirebaseFirestore in Frameworks */,
+				60A94F3F2D69CC530084CA53 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		602A44A22D89168C003CA53B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				602A44A82D89172A003CA53B /* APICall */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		602A44A82D89172A003CA53B /* APICall */ = {
+			isa = PBXGroup;
+			children = (
+				602A44A02D89168C003CA53B /* NetworkManager.swift */,
+				602A44A12D89168C003CA53B /* NetworkUtil.swift */,
+				602A449F2D89168C003CA53B /* NetworkError.swift */,
+			);
+			path = APICall;
+			sourceTree = "<group>";
+		};
+		6032A2F02D831E7700480217 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60A94F442D69CD0A0084CA53 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				60A94F452D69CD2B0084CA53 /* UIApplication+RootViewController.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		60A94F472D69CD490084CA53 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				60A94F4A2D69CD5A0084CA53 /* AuthenticatedView.swift */,
+				60A94F4C2D69CD5F0084CA53 /* AuthenticationView.swift */,
+				60A94F4E2D69CD6C0084CA53 /* LoginView.swift */,
+				60A94F502D69CD740084CA53 /* SignupView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		60BB97C82D90035F001CE590 /* QuizView */ = {
+			isa = PBXGroup;
+			children = (
+				60FBF7D72D5DCB3D00B1ABB6 /* QuizView.swift */,
+				60BB97C92D9003B4001CE590 /* FlashcardView.swift */,
+				60BB97CB2D900490001CE590 /* MultipleChoiceView.swift */,
+			);
+			path = QuizView;
+			sourceTree = "<group>";
+		};
+		60BB97D12D93B520001CE590 /* SoundEffects */ = {
+			isa = PBXGroup;
+			children = (
+				60BB97D22D93B562001CE590 /* correct.mp3 */,
+				60BB97D32D93B562001CE590 /* incorrect.mp3 */,
+			);
+			path = SoundEffects;
+			sourceTree = "<group>";
+		};
+		60FBF79C2D5DC9E600B1ABB6 = {
+			isa = PBXGroup;
+			children = (
+				60FBF7A72D5DC9E600B1ABB6 /* LearnEnglishThroughNews */,
+				6032A2F02D831E7700480217 /* Frameworks */,
+				60FBF7A62D5DC9E600B1ABB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60FBF7A62D5DC9E600B1ABB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60FBF7A52D5DC9E600B1ABB6 /* LearnEnglishThroughNews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60FBF7A72D5DC9E600B1ABB6 /* LearnEnglishThroughNews */ = {
+			isa = PBXGroup;
+			children = (
+				60A94F522D69CE950084CA53 /* Info.plist */,
+				60DD87E12D78480600DB31D7 /* LearnEnglishThroughNewsApp.swift */,
+				602A44A22D89168C003CA53B /* Services */,
+				60A94F442D69CD0A0084CA53 /* Utilities */,
+				60FBF7BF2D5DCA9900B1ABB6 /* Models */,
+				60FBF7C42D5DCAC500B1ABB6 /* ViewModels */,
+				60FBF7CB2D5DCAE700B1ABB6 /* Views */,
+				60BB97D12D93B520001CE590 /* SoundEffects */,
+				60FBF7AC2D5DC9E800B1ABB6 /* Assets.xcassets */,
+				60A94F422D69CC690084CA53 /* GoogleService-Info.plist */,
+				60FBF7AE2D5DC9E800B1ABB6 /* Preview Content */,
+			);
+			path = LearnEnglishThroughNews;
+			sourceTree = "<group>";
+		};
+		60FBF7AE2D5DC9E800B1ABB6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				60FBF7AF2D5DC9E800B1ABB6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		60FBF7BF2D5DCA9900B1ABB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60FBF7C02D5DCABF00B1ABB6 /* News.swift */,
+				60FBF7C12D5DCABF00B1ABB6 /* WorldNews.swift */,
+				6006DD102D85131F00070F2B /* SavedWord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60FBF7C42D5DCAC500B1ABB6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				60A94F482D69CD550084CA53 /* AuthenticationViewModel.swift */,
+				60FBF7C62D5DCADA00B1ABB6 /* NewsViewModel.swift */,
+				60BB97CF2D91A0E1001CE590 /* NewsContentViewModel.swift */,
+				60838B0C2D8BB27B00B25CCF /* VocabViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		60FBF7CB2D5DCAE700B1ABB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60A94F472D69CD490084CA53 /* Auth */,
+				60FBF7D02D5DCB0F00B1ABB6 /* NewsView */,
+				60FBF7D92D5DCB3D00B1ABB6 /* VocabView.swift */,
+				60BB97C82D90035F001CE590 /* QuizView */,
+				60F2E92C2D97B24200383BFC /* StatisticalView.swift */,
+				60FBF7D82D5DCB3D00B1ABB6 /* ProfileView.swift */,
+				60FBF7CC2D5DCB0600B1ABB6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		60FBF7D02D5DCB0F00B1ABB6 /* NewsView */ = {
+			isa = PBXGroup;
+			children = (
+				60FBF7D22D5DCB3100B1ABB6 /* NewsView.swift */,
+				60FBF7D12D5DCB3100B1ABB6 /* NewsContentView.swift */,
+				602A44932D8912D0003CA53B /* TextContentView.swift */,
+				602A44942D8912D0003CA53B /* WordTranslateView.swift */,
+				602A44A92D892368003CA53B /* CustomWordView.swift */,
+			);
+			path = NewsView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60FBF7A42D5DC9E600B1ABB6 /* LearnEnglishThroughNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60FBF7B32D5DC9E800B1ABB6 /* Build configuration list for PBXNativeTarget "LearnEnglishThroughNews" */;
+			buildPhases = (
+				60FBF7A12D5DC9E600B1ABB6 /* Sources */,
+				60FBF7A22D5DC9E600B1ABB6 /* Frameworks */,
+				60FBF7A32D5DC9E600B1ABB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearnEnglishThroughNews;
+			packageProductDependencies = (
+				60A94F3B2D69CC280084CA53 /* FirebaseAuth */,
+				60A94F3E2D69CC530084CA53 /* GoogleSignIn */,
+				60A94F402D69CC530084CA53 /* GoogleSignInSwift */,
+				6032A2F12D831E7700480217 /* FirebaseFirestore */,
+			);
+			productName = LearnEnglishThroughNews;
+			productReference = 60FBF7A52D5DC9E600B1ABB6 /* LearnEnglishThroughNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60FBF79D2D5DC9E600B1ABB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					60FBF7A42D5DC9E600B1ABB6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 60FBF7A02D5DC9E600B1ABB6 /* Build configuration list for PBXProject "LearnEnglishThroughNews" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60FBF79C2D5DC9E600B1ABB6;
+			packageReferences = (
+				60A94F3A2D69CC280084CA53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				60A94F3D2D69CC530084CA53 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 60FBF7A62D5DC9E600B1ABB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60FBF7A42D5DC9E600B1ABB6 /* LearnEnglishThroughNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60FBF7A32D5DC9E600B1ABB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60FBF7B02D5DC9E800B1ABB6 /* Preview Assets.xcassets in Resources */,
+				60FBF7AD2D5DC9E800B1ABB6 /* Assets.xcassets in Resources */,
+				60A94F432D69CC690084CA53 /* GoogleService-Info.plist in Resources */,
+				60BB97D42D93B562001CE590 /* correct.mp3 in Resources */,
+				60BB97D52D93B562001CE590 /* incorrect.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60FBF7A12D5DC9E600B1ABB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A94F512D69CD740084CA53 /* SignupView.swift in Sources */,
+				60BB97CC2D900490001CE590 /* MultipleChoiceView.swift in Sources */,
+				602A44AA2D892368003CA53B /* CustomWordView.swift in Sources */,
+				60BB97CA2D9003B4001CE590 /* FlashcardView.swift in Sources */,
+				60A94F462D69CD2B0084CA53 /* UIApplication+RootViewController.swift in Sources */,
+				60A94F492D69CD550084CA53 /* AuthenticationViewModel.swift in Sources */,
+				60FBF7CE2D5DCB0600B1ABB6 /* ContentView.swift in Sources */,
+				60A94F4B2D69CD5A0084CA53 /* AuthenticatedView.swift in Sources */,
+				60FBF7C92D5DCADA00B1ABB6 /* NewsViewModel.swift in Sources */,
+				60FBF7D52D5DCB3100B1ABB6 /* NewsView.swift in Sources */,
+				60FBF7C22D5DCABF00B1ABB6 /* News.swift in Sources */,
+				60BB97D02D91A0E1001CE590 /* NewsContentViewModel.swift in Sources */,
+				6006DD112D85131F00070F2B /* SavedWord.swift in Sources */,
+				60DD87E22D78480600DB31D7 /* LearnEnglishThroughNewsApp.swift in Sources */,
+				60FBF7C32D5DCABF00B1ABB6 /* WorldNews.swift in Sources */,
+				602A44A32D89168C003CA53B /* NetworkManager.swift in Sources */,
+				602A44A42D89168C003CA53B /* NetworkUtil.swift in Sources */,
+				602A44A52D89168C003CA53B /* NetworkError.swift in Sources */,
+				60FBF7DB2D5DCB3D00B1ABB6 /* ProfileView.swift in Sources */,
+				60A94F4D2D69CD5F0084CA53 /* AuthenticationView.swift in Sources */,
+				60F2E92D2D97B24200383BFC /* StatisticalView.swift in Sources */,
+				60FBF7DA2D5DCB3D00B1ABB6 /* QuizView.swift in Sources */,
+				60838B0D2D8BB27B00B25CCF /* VocabViewModel.swift in Sources */,
+				60FBF7DC2D5DCB3D00B1ABB6 /* VocabView.swift in Sources */,
+				60A94F4F2D69CD6C0084CA53 /* LoginView.swift in Sources */,
+				602A44952D8912D0003CA53B /* TextContentView.swift in Sources */,
+				602A44962D8912D0003CA53B /* WordTranslateView.swift in Sources */,
+				60FBF7D42D5DCB3100B1ABB6 /* NewsContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		60FBF7B12D5DC9E800B1ABB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60FBF7B22D5DC9E800B1ABB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60FBF7B42D5DC9E800B1ABB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LearnEnglishThroughNews/Preview Content\"";
+				DEVELOPMENT_TEAM = 9D23M885K3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearnEnglishThroughNews/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dungnd.LearnEnglishThroughNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		60FBF7B52D5DC9E800B1ABB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LearnEnglishThroughNews/Preview Content\"";
+				DEVELOPMENT_TEAM = 9D23M885K3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearnEnglishThroughNews/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dungnd.LearnEnglishThroughNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60FBF7A02D5DC9E600B1ABB6 /* Build configuration list for PBXProject "LearnEnglishThroughNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60FBF7B12D5DC9E800B1ABB6 /* Debug */,
+				60FBF7B22D5DC9E800B1ABB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60FBF7B32D5DC9E800B1ABB6 /* Build configuration list for PBXNativeTarget "LearnEnglishThroughNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60FBF7B42D5DC9E800B1ABB6 /* Debug */,
+				60FBF7B52D5DC9E800B1ABB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		60A94F3A2D69CC280084CA53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.9.0;
+			};
+		};
+		60A94F3D2D69CC530084CA53 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6032A2F12D831E7700480217 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60A94F3A2D69CC280084CA53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		60A94F3B2D69CC280084CA53 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60A94F3A2D69CC280084CA53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		60A94F3E2D69CC530084CA53 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60A94F3D2D69CC530084CA53 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		60A94F402D69CC530084CA53 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60A94F3D2D69CC530084CA53 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 60FBF79D2D5DC9E600B1ABB6 /* Project object */;
+}
