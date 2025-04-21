@@ -14,12 +14,12 @@
 		602A44A42D89168C003CA53B /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A44A12D89168C003CA53B /* NetworkUtil.swift */; };
 		602A44A52D89168C003CA53B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A449F2D89168C003CA53B /* NetworkError.swift */; };
 		602A44AA2D892368003CA53B /* CustomWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A44A92D892368003CA53B /* CustomWordView.swift */; };
+		602E055C2DB5F2DA00B41A35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 602E055B2DB5F2DA00B41A35 /* GoogleService-Info.plist */; };
 		6032A2F22D831E7700480217 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6032A2F12D831E7700480217 /* FirebaseFirestore */; };
 		60838B0D2D8BB27B00B25CCF /* VocabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60838B0C2D8BB27B00B25CCF /* VocabViewModel.swift */; };
 		60A94F3C2D69CC280084CA53 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 60A94F3B2D69CC280084CA53 /* FirebaseAuth */; };
 		60A94F3F2D69CC530084CA53 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 60A94F3E2D69CC530084CA53 /* GoogleSignIn */; };
 		60A94F412D69CC530084CA53 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 60A94F402D69CC530084CA53 /* GoogleSignInSwift */; };
-		60A94F432D69CC690084CA53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60A94F422D69CC690084CA53 /* GoogleService-Info.plist */; };
 		60A94F462D69CD2B0084CA53 /* UIApplication+RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A94F452D69CD2B0084CA53 /* UIApplication+RootViewController.swift */; };
 		60A94F492D69CD550084CA53 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A94F482D69CD550084CA53 /* AuthenticationViewModel.swift */; };
 		60A94F4B2D69CD5A0084CA53 /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A94F4A2D69CD5A0084CA53 /* AuthenticatedView.swift */; };
@@ -54,8 +54,8 @@
 		602A44A02D89168C003CA53B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		602A44A12D89168C003CA53B /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 		602A44A92D892368003CA53B /* CustomWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWordView.swift; sourceTree = "<group>"; };
+		602E055B2DB5F2DA00B41A35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		60838B0C2D8BB27B00B25CCF /* VocabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabViewModel.swift; sourceTree = "<group>"; };
-		60A94F422D69CC690084CA53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		60A94F452D69CD2B0084CA53 /* UIApplication+RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+RootViewController.swift"; sourceTree = "<group>"; };
 		60A94F482D69CD550084CA53 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		60A94F4A2D69CD5A0084CA53 /* AuthenticatedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 				60FBF7CB2D5DCAE700B1ABB6 /* Views */,
 				60BB97D12D93B520001CE590 /* SoundEffects */,
 				60FBF7AC2D5DC9E800B1ABB6 /* Assets.xcassets */,
-				60A94F422D69CC690084CA53 /* GoogleService-Info.plist */,
+				602E055B2DB5F2DA00B41A35 /* GoogleService-Info.plist */,
 				60FBF7AE2D5DC9E800B1ABB6 /* Preview Content */,
 			);
 			path = LearnEnglishThroughNews;
@@ -286,7 +286,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					60FBF7A42D5DC9E600B1ABB6 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -321,8 +321,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				60FBF7B02D5DC9E800B1ABB6 /* Preview Assets.xcassets in Resources */,
+				602E055C2DB5F2DA00B41A35 /* GoogleService-Info.plist in Resources */,
 				60FBF7AD2D5DC9E800B1ABB6 /* Assets.xcassets in Resources */,
-				60A94F432D69CC690084CA53 /* GoogleService-Info.plist in Resources */,
 				60BB97D42D93B562001CE590 /* correct.mp3 in Resources */,
 				60BB97D52D93B562001CE590 /* incorrect.mp3 in Resources */,
 			);
@@ -403,6 +403,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9D23M885K3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -464,6 +465,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9D23M885K3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -493,7 +495,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearnEnglishThroughNews/Preview Content\"";
-				DEVELOPMENT_TEAM = 9D23M885K3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LearnEnglishThroughNews/Info.plist;
@@ -528,7 +529,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearnEnglishThroughNews/Preview Content\"";
-				DEVELOPMENT_TEAM = 9D23M885K3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LearnEnglishThroughNews/Info.plist;

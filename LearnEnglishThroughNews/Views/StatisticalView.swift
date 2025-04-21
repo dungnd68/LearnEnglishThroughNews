@@ -22,7 +22,7 @@ struct StatisticalView: View {
                 .padding()
             
             HStack {
-                StatCard(title: "Số từ đã lưu", value: totalSavedWords)
+                StatCard(title: "Số từ đang lưu", value: totalSavedWords)
                 StatCard(title: "Số lần làm sai", value: wrongWords.reduce(0) { $0 + $1.count })
             }
             .padding()
